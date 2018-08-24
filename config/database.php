@@ -1,8 +1,8 @@
 <?php
 /*
-	Author:  Drew D. Lenhart
-	Page: database.php *Default database
-	Desc: Database connection info.
+    Author:  Drew D. Lenhart
+    Page: database.php *Default database
+    Desc: Database connection info.
 */
 
 use Illuminate\Database\Capsule\Manager as Capsule;
@@ -11,23 +11,23 @@ $capsule = new Capsule;
 
 $capsule->addConnection(
     array(
-		'driver'    => 'mysql',
-		'host'      => 'DB_HOST',
-		'database'  => 'DB_NAME',
-		'username'  => 'DB_USER',
-		'password'  => 'DB_PASSWORD',
-		'prefix'    => '',
+        'driver'    => 'mysql',
+        'host'      => 'DB_HOST',
+        'database'  => 'DB_NAME',
+        'username'  => 'DB_USER',
+        'password'  => 'DB_PASSWORD',
+        'prefix'    => '',
     ),
-	"default"
+    "default"
 );
 
 $capsule->addConnection(
     array(
-		'driver'   => 'sqlite',
-		'database' => __DIR__ . '/../data/sample.sqlite',
-		'prefix'   => ''
+        'driver'   => 'sqlite',
+        'database' => __DIR__ . '/../data/sample.sqlite',
+        'prefix'   => ''
     ),
-	"sqlite"
+    "sqlite"
 );
 
 $capsule->bootEloquent();
