@@ -2,7 +2,7 @@
 use PHPUnit\Framework\TestCase;
 
 /**
- * Class HomepageTest
+ * Class Test
  * @package APP\Tests
  */
  class Test extends TestCase
