@@ -24,6 +24,7 @@ To run st-slim3-skeleton:
 
 ## Setup
 
+* Run - composer install
 * Launch local PHP Server from st-slim3-skeleton folder `php -S localhost:8000 -t public public/index.php`
 * Launch server.bat if on Windows
 * Visit `http://localhost:8000`
