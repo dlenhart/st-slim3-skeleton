@@ -17,7 +17,7 @@ $app->post('/api/samplePost', 'ApiController:examplePost');
 
 // Swagger API link
 $app->get('/v1/docs', function ($request, $response, $args) {
-    $dir = __DIR__ . '\Controller'; // Scan Controller folder
+    $dir = __DIR__ . '/Controller'; // Scan Controller folder
 
     $swagger = \Swagger\scan([$dir]);
 

@@ -5,9 +5,9 @@
 	Desc: Database connection info.
 */
 
-use Illuminate\Database\Capsule\Manager as Capsule;  
+use Illuminate\Database\Capsule\Manager as Capsule;
 
-$capsule = new Capsule; 
+$capsule = new Capsule;
 
 $capsule->addConnection(
     array(
@@ -24,7 +24,7 @@ $capsule->addConnection(
 $capsule->addConnection(
     array(
 		'driver'   => 'sqlite',
-		'database' => __DIR__ . '\..\data\sample.sqlite',
+		'database' => __DIR__ . '/../data/sample.sqlite',
 		'prefix'   => ''
     ),
 	"sqlite"

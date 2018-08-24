@@ -31,7 +31,7 @@ class HomeController extends AbstractController
     public function createDatabaseSample(Request $request, Response $response, $args)
     {
         //Create a sample database for examples.
-        $baseDir = __DIR__ . '\..\..\data\sample.sqlite';
+        $baseDir = __DIR__ . '/../../data/sample.sqlite';
         // Check if the sample db exsists.
         if (file_exists($baseDir)) {
             echo "Database Exsists!<br />";
