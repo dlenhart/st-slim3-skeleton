@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home Page</title>
+
+    <link href="/resources/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar_links" aria-expanded="false" aria-controls="navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Home Page</a>
+            </div>
+            <div id="navbar_links" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" target="_blank">Link</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script type="text/javascript" src="/resources/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/resources/js/bootstrap.min.js"></script>
+
+    <div class="container-fluid fill" style="margin-top: 80px; margin-left: 5%; margin-right: 5%">
+
+        {% block content %} {% endblock %}
+        <div class="row">
+            <div class="panel panel-default" data-title="category">
+                <div class="panel-body container-fluid" data-id="category">
+                    © 2018
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

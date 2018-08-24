@@ -1,0 +1,18 @@
+{% extends 'Layout.html' %}
+
+{% block content %}
+<div class="row">
+	<div style="margin-top: 1%" id="home">
+		<div class="supportPanel panel panel-primary" data-title="category">
+			<div class="panel-heading"><b>DEMO</b></div>
+			<div class="panel-body container-fluid" data-id="category">
+				welcome to the {{ title }} page!
+				<br /><br />
+				<hr />
+				<a class="btn btn-default" href='/createSample'>Create Sample Database</a>
+				<a class="btn btn-default" href='/swagger/index.html'>Swagger</a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
