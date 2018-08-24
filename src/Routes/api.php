@@ -8,16 +8,12 @@ e.g. -   $app->get("route/url", '{{controller}}:{{method}}');
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 
-$app->get('/', 'HomeController:index');
-$app->get('/createSample', 'HomeController:createDatabaseSample');
-$app->get('/validationSample', 'HomeController:validationSample');
-
 $app->get('/api/sample', 'ApiController:example');
 $app->post('/api/samplePost', 'ApiController:examplePost');
 
 // Swagger API link
 $app->get('/v1/docs', function ($request, $response, $args) {
-    $dir = __DIR__ . '/Controller'; // Scan Controller folder
+    $dir = __DIR__ . '/../Controller'; // Scan Controller folder
 
     $swagger = \Swagger\scan([$dir]);
 

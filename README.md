@@ -1,6 +1,6 @@
 # st-slim3-skeleton - A Slim Framework Skeleton
 
-This is a simple Slim 3 MVC skeleton I use to get going on simple projects.  This is modeled pretty heavily on [HelloSlim3](http://url) with modifications of my own, such as using
+This is a simple Slim 3 MVC skeleton I use to get going on simple projects.  This is modeled pretty heavily on [HelloSlim3](https://github.com/napolux/helloslim3) with modifications of my own, such as using
 Eloquent, Swagger, Respect Validation.....
 
 
