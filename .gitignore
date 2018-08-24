@@ -2,7 +2,6 @@
 /public/uploads/*
 /logs/*.txt
 /data/*.sqlite
-composer.lock
 
 # Windows image file caches
 Thumbs.db
