@@ -12,16 +12,16 @@ $container['view'] = function ($container) {
         $container['router'],
         $container['request']->getUri()
     ));
-	$view->getEnvironment()->addGlobal('flash', $container['flash']);
+    $view->getEnvironment()->addGlobal('flash', $container['flash']);
     return $view;
 };
 
 // 404 Not Found
 $container['notFoundHandler'] = function ($container) {
     return function ($request, $response) use ($container) {
-		$title = "OOPS!";
-		$data = array('title' => $title);
-        return $container->view->render($response, '404.html', $data) 
+        $title = "OOPS!";
+        $data = array('title' => $title);
+        return $container->view->render($response, '404.html', $data)
             ->withStatus(404)
             ->withHeader('Content-Type', 'text/html');
     };
@@ -39,7 +39,7 @@ $container['flash'] = function ($container) {
 // Customized below
 
 //Guzzle HTTP client
-$container['httpClient'] = function($container) {
+$container['httpClient'] = function ($container) {
     return new \GuzzleHttp\Client();
 };
 

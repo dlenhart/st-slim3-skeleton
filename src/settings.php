@@ -9,5 +9,5 @@ return [
         'renderer' => [
             'template_path' => __DIR__ . '/../templates/',
         ]
-	],
+    ],
 ];

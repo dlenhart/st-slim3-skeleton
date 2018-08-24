@@ -1,5 +1,6 @@
 <?php
 namespace APP\Controller;
+
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 use Illuminate\Database\Capsule\Manager as DB;
@@ -11,7 +12,8 @@ use APP\Models\Sample;
  * @package HomeController\Controller
  */
 
-class HomeController extends AbstractController {
+class HomeController extends AbstractController
+{
     /**
      * @param Request $request
      * @param Response $response
@@ -19,13 +21,15 @@ class HomeController extends AbstractController {
      * @return Response
      */
     // Home Page
-    public function index(Request $request, Response $response, $args) {
+    public function index(Request $request, Response $response, $args)
+    {
         $data = array('title' => 'Home');
         return $this->view->render($response, 'Home.html', $data);
     }
 
     // Create SAMPLE SQLITE database
-    public function createDatabaseSample(Request $request, Response $response, $args) {
+    public function createDatabaseSample(Request $request, Response $response, $args)
+    {
         //Create a sample database for examples.
         $baseDir = __DIR__ . '\..\..\data\sample.sqlite';
         // Check if the sample db exsists.
