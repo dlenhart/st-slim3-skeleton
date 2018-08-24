@@ -24,7 +24,7 @@ class ApiController extends AbstractController
     {
 
       /**
-       * Display a listing of the resource.
+       * Query database table
        *
        * @return Response
        *
