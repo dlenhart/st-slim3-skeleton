@@ -14,6 +14,7 @@ Here are some of the st-slim3-skeleton features...
 * Basic controller example
 * Basic model example
 * Swagger example
+* Authentication example
 
 ## Requirements
 
@@ -33,6 +34,16 @@ To run st-slim3-skeleton:
 
 * Write tests, PHPUnit....
 * Database migrations...
+
+## Helpfull Sources
+
+* https://github.com/napolux/helloslim3
+
+* https://www.codecourse.com/library/lessons/slim-3-authentication
+
+## Website
+
+* https://drewlenhart.com
 
 ## License
 

@@ -1,7 +1,7 @@
 <?php
 /*
 author:  Drew Lenhart
-des:	routes
+des:	routes - api
 e.g. -   $app->get("route/url", '{{controller}}:{{method}}');
 */
 

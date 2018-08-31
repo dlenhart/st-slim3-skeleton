@@ -3,6 +3,11 @@
 
 $container = $app->getContainer();
 
+// Authentication
+$container['auth'] = function ($container) {
+    return new \APP\Auth\Auth;
+};
+
 // Using Twig as template engine
 $container['view'] = function ($container) {
     $view = new \Slim\Views\Twig('src/Views', [
@@ -13,6 +18,15 @@ $container['view'] = function ($container) {
         $container['request']->getUri()
     ));
     $view->getEnvironment()->addGlobal('flash', $container['flash']);
+    //auth
+    $view->getEnvironment()->addGlobal(
+        'auth',
+        [
+        'authenticated' => $container->auth->isAuthenticated(),
+        'details' => $container->auth->getUser()
+        ]
+    );
+
     return $view;
 };
 
@@ -56,4 +70,19 @@ $container['HomeController'] = function ($container) {
 // ApiController
 $container['ApiController'] = function ($container) {
     return new \APP\Controller\ApiController($container);
+};
+
+// AdminController
+$container['AdminController'] = function ($container) {
+    return new \APP\Controller\AdminController($container);
+};
+
+// AuthController
+$container['AuthController'] = function ($container) {
+    return new \APP\Controller\AuthController($container);
+};
+
+// CreateSampleController
+$container['CreateSampleController'] = function ($container) {
+    return new \APP\Controller\CreateSampleController($container);
 };

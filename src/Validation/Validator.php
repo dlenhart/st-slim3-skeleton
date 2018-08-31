@@ -1,7 +1,10 @@
 <?php
 namespace APP\Validation;
 
-//DDL - validator using Respect.  Kinda watered down.  Catch failures in Controller....
+// DDL - validator using Respect.
+// Codecourse was very helpfull in creating this.
+// Credit goes to the author of that course.
+// https://codecourse.com/watch/slim-3-authentication
 
 use Respect\Validation\Validator as Respect;
 use Respect\Validation\Exceptions\NestedValidationException;
@@ -18,6 +21,10 @@ class Validator
                 $this->errors[$field] = $e->getMessages();
             }
         }
+
+        //set session errors
+        $_SESSION['ERRORS'] = $this->errors;
+
         return $this;
     }
 

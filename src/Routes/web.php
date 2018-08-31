@@ -9,5 +9,9 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 
 $app->get('/', 'HomeController:index');
-$app->get('/createSample', 'HomeController:createDatabaseSample');
-$app->get('/validationSample', 'HomeController:validationSample');
+
+// Create Sample SQLite database
+$app->get('/createSample', 'CreateSampleController:createDatabaseSample'); 
+
+// Create Users table....
+$app->get('/createUsers', 'CreateSampleController:createUserTable'); 

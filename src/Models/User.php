@@ -8,10 +8,16 @@ use Illuminate\Database\Eloquent\Model as Model;
  * @package APP\Models
  * @author: Drew D. Lenhart
  */
-class Sample extends Model
+class User extends Model
 {
-    public $timestamps = false;
+    public $timestamps = true;
     protected $connection = 'sqlite';
 
-    protected $table = 'Sample';
+    protected $table = 'Users';
+
+    protected $fillable = [
+        'email',
+        'name',
+        'password'
+    ];
 }

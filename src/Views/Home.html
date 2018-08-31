@@ -4,11 +4,17 @@
 		<div class="supportPanel panel panel-primary" data-title="category">
 			<div class="panel-heading"><b>DEMO</b></div>
 			<div class="panel-body container-fluid" data-id="category">
-				welcome to the {{ title }} page!
+				welcome to the {{ title }} page!<br /><br />
+				<em>This page is an example.</em>
 				<br /><br />
-				<hr />
-				<a class="btn btn-default" href='/createSample'>Create Sample Database</a>
+				{{ auth | json_encode }}<br /><br />
 				<a class="btn btn-default" href='/swagger/index.html'>Swagger</a>
+				<hr />
+				<h4>Sample Operations</h4>
+				<a class="btn btn-default" href='/createSample'>Create Sample Database</a><br /><br />	
+				<a class="btn btn-default" href='/createUsers'>Create User Table</a><br /><br />					
+				<a class="btn btn-default" href='/register'>Register</a><br /><br />
+				<a class="btn btn-default" href='/admin'>Admin</a>
 			</div>
 		</div>
 	</div>

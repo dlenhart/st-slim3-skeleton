@@ -1,0 +1,18 @@
+{% extends 'Layout.html' %} {% block content %}
+<div class="row">
+	<div style="margin-top: 1%" id="home">
+		<div class="supportPanel panel panel-danger" data-title="category">
+			<div class="panel-heading"><b>Admin</b></div>
+			<div class="panel-body container-fluid" data-id="category">
+				welcome to the {{ title }} page!
+				<br /><br /> {{ auth | json_encode }} <br /><br />
+
+				<a class="btn btn-default" href='/logout'>Logout</a>
+
+				<hr />
+				<em>Do something awesome here!</em>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
