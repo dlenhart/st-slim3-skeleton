@@ -71,7 +71,7 @@ class CreateSampleController extends AbstractController
         }
     }
 
-    // Create Admin User - SAMPLE CODE - REMOVE
+    // Create User Table - SAMPLE CODE - REMOVE
     public function createUserTable(Request $request, Response $response, $args)
     {
         // This is just an example.  This uses the SAMPLE SQLite db & creates User table.
