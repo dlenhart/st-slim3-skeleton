@@ -11,8 +11,8 @@ Here are some of the st-slim3-skeleton features...
 * Eloquent ORM integration
 * Bootstrap integration
 * Twig example
-* Basic controller example
-* Basic model example
+* Controller example
+* Model example
 * Swagger example
 * Authentication example
 
