@@ -6,7 +6,7 @@ Eloquent, Swagger, Respect Validation.....
 
 ## Features
 
-Here are some of the st-slim3-skeleton features...
+st-slim3-skeleton features:
 
 * Eloquent ORM integration
 * Bootstrap integration
